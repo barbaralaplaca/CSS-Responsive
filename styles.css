@@ -1,0 +1,117 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-title {
+  border-bottom: 1px solid gray;
+  padding: 8px;
+}
+
+header {
+  text-align: center;
+}
+
+button {
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 5px;
+  transition-duration: 0.1ms;
+  margin: 3px;
+}
+
+button:hover {
+  background-color: darkgray;
+  font-weight: 600;
+}
+
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+.article-title-paragraph-button {
+    margin: 0 2em;
+  }
+
+@media only screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  article {
+    margin: 2em 0;
+    text-align: justify;
+  }
+
+  .article-images {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: auto;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+    align-content: space-between;
+  }
+
+  .section-title {
+    grid-column: 1/3;
+  }
+
+  article {
+    padding: 1em 0.2em;
+    text-align: justify;
+    margin: 0 0.2em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 10px;
+    align-self: start;
+  }
+
+  .article-images {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 20em;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    margin: auto;
+
+  }
+
+  .section-title {
+    grid-column: 1/5;
+  }
+
+  .article-images {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 15em;
+    overflow: hidden;
+  }
+}
