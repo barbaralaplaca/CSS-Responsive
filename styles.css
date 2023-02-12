@@ -47,8 +47,8 @@ img {
 .article-content {
   margin: 0 2em;
   display: grid;
-  grid-template-columns: 25% 25% 50%;
-  grid-template-rows: 0.5fr 3fr 0.5fr;
+  grid-template-columns: 30% 30% 40%;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
 }
 
 .article-content h2 {
@@ -57,12 +57,20 @@ img {
 
 .article-content p {
   grid-column: 1/5;
+  font-size: 14px;
 }
 
 .article-content span {
   grid-column: 3/5;
   justify-self: end;
   align-self: center;
+  font-size: 14px;
+}
+
+.article-content button {
+  font-size: 12px;
+  align-self: end;
+  max-width: 8em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -110,7 +118,7 @@ img {
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1060px) {
   section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
